@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub- Source](https://github.com/fa125had/3columns-preview-card-component)
+- Live Site URL: [GitHub- Live](https://fa125had.github.io/3columns-preview-card-component/)
 
 ## My process
 
