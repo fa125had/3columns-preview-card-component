@@ -1,0 +1,175 @@
+:root {
+    --color-brightOrange: hsl(31, 77%, 52%);
+    --color-darkCyan: hsl(184, 100%, 22%);
+    --color-veryDarkCyan: hsl(179, 100%, 13%);
+    --color-transparentWhite-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --colorVery-lightGrayBackground-headingsButtons: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+h1,
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.mainBackground {
+    max-width: 1440px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorVery-lightGrayBackground-headingsButtons);
+
+}
+
+.organizer {
+    max-width: 60%;
+}
+
+.boxContainer {
+    /* max-height: 100%; */
+    border-radius: 0.55rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    overflow: scroll;
+}
+
+.categoryHeading {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--colorVery-lightGrayBackground-headingsButtons);
+    padding: 1rem 0;
+}
+
+.categoryDescription {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--color-transparentWhite-paragraphs);
+    line-height: 1.7;
+    padding: 1rem 0;
+
+}
+
+.btn--learnMore {
+    background-color: var(--colorVery-lightGrayBackground-headingsButtons);
+    padding: 0.7rem 2.5rem;
+    border-radius: 5rem;
+    margin: 1rem 0;
+    transition: 250ms;
+}
+
+.btn--learnMore:hover {
+    background-color: rgba(1, 1, 1, 0);
+    color: var(--colorVery-lightGrayBackground-headingsButtons);
+    border: 0.1rem solid var(--colorVery-lightGrayBackground-headingsButtons);
+}
+
+
+.sedans,
+.suvs,
+.luxury {
+    /* max-height: fit-content; */
+    padding: 3rem 3rem;
+}
+
+.btn {
+    display: block;
+    align-self: center;
+    margin: 2rem 0;
+}
+
+.boxOne {
+    background-color: var(--color-brightOrange);
+}
+
+.boxOne a {
+    color: var(--color-brightOrange);
+}
+
+.boxTwo {
+    background-color: var(--color-darkCyan);
+}
+
+.boxTwo a {
+    color: var(--color-darkCyan);
+}
+
+.boxThree {
+    background-color: var(--color-veryDarkCyan);
+}
+
+.boxThree a {
+    color: var(--color-veryDarkCyan);
+}
+
+@media all and (max-width: 1439px) {
+    .mainBackground {
+        width: 100%;
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .organizer {
+        height: 95%;
+        max-width: 375px;
+        overflow: scroll;
+    }
+
+    .boxContainer {
+        flex-direction: column;
+    }
+}
+
+.attribution {
+    background-color: var(--color-brightOrange);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--colorVery-lightGrayBackground-headingsButtons);
+}
+
+@media all and (max-width: 415px) {
+    .mainBackground {
+        width: 100%;
+        height: 100%;
+    }
+
+    .organizer {
+        height: 100%;
+        max-width: 375px;
+        overflow: scroll;
+    }
+}
+
+@media all and (max-width: 319px) {
+    body {
+        display: none;
+    }
+
+}
